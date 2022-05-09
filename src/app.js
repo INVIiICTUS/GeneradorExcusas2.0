@@ -6,6 +6,34 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  function excusa() {
+    let pronoun = ["a", "the"];
+
+    let subjet = ["jogger", "racon", "dog", "driver", "comedian", "pincone"];
+    let action = ["took my", "threw my", "yelled at my", "stole my", "bit my"];
+    let possetion = ["homework", " toe", "car", "shoe"];
+    let where = ["on the street", "in my house", "in my driveway"];
+
+    let proIndex = Math.floor(Math.random() * pronoun.length);
+    let subjIndex = Math.floor(Math.random() * subjet.length);
+    let actionIndex = Math.floor(Math.random() * action.length);
+    let possetionIndex = Math.floor(Math.random() * possetion.length);
+    let whereIndex = Math.floor(Math.random() * where.length);
+
+    return (
+      pronoun[proIndex] +
+      " " +
+      subjet[subjIndex] +
+      " " +
+      action[actionIndex] +
+      " " +
+      possetion[possetionIndex] +
+      " " +
+      where[whereIndex]
+    );
+  }
+  document.querySelector("#boton").addEventListener("click", () => {
+    document.querySelector("#excusa").innerHTML = excusa();
+  });
+  console.log("excusa");
 };
