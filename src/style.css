@@ -1,1 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: rgb(89, 89, 175);
+}
+
+.divpadre {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.d-block {
+  display: block;
+  text-align: center;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  color: rgb(107, 21, 21);
+}
